@@ -1,0 +1,150 @@
+/* Earthy Grounding Theme - Refined */
+
+/* General Body Styles */
+body {
+    padding-top: 0; /* Removed padding for navbar */
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #41444B; /* Charcoal Gray */
+    background-color: #F5F1E9; /* Warm Linen/Oatmeal */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header Section */
+.main-header {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #F5F1E9; /* Warm Linen/Oatmeal */
+}
+
+.main-header .brand-logo {
+    max-width: 150px; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.main-header .brand-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #8F9D84; /* Sage Green */
+    letter-spacing: 2px;
+}
+
+.main-header .brand-tagline {
+    font-size: 1.1rem;
+    color: #41444B; /* Charcoal Gray */
+    margin-top: 0.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+/* Section Styles & Titles */
+section {
+    padding: 60px 0;
+}
+
+h2.section-title {
+    color: #8F9D84; /* Sage Green */
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+h3, h4, h5 {
+    color: #41444B; /* Charcoal Gray */
+    font-weight: 600;
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #e0dace;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* DIY Section */
+#diy-lab {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 4rem;
+}
+
+.accordion-button {
+    color: #41444B;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #C98A6D; /* Terracotta */
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(201, 138, 109, 0.25);
+}
+
+/* Subscribe Section */
+#subscribe {
+    background-color: #8F9D84; /* Sage Green */
+    border-radius: 8px;
+    color: #F5F1E9;
+}
+
+#subscribe h2 {
+    color: #F5F1E9;
+}
+
+#subscribe .form-control {
+    height: 48px;
+}
+
+#subscribe .btn-primary {
+    background-color: #C98A6D; /* Terracotta */
+    border-color: #C98A6D;
+    color: white;
+    font-weight: 600;
+}
+
+#subscribe .btn-primary:hover {
+    background-color: #b57960; /* Darker Terracotta */
+    border-color: #b57960;
+}
+
+#subscribe-message {
+    min-height: 24px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: #41444B !important; /* Charcoal Gray */
+    color: #F5F1E9;
+}
