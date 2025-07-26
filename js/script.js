@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = emailInput.value;
 
             if (!validateEmail(email)) {
-                messageContainer.textContent = '유효한 이메일 주소를 입력해주세요.';
+                messageContainer.textContent = '이메일 주소를 입력해주세요.';
                 messageContainer.style.color = 'red';
                 return;
             }
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function validateEmail(email) {
-        const re = /^(([^<>()[\\]\\.,;:\s@"]+(\.[^<>()[\\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
 });
