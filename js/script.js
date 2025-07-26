@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const subscribeForm = document.getElementById('subscribe-form');
     if (subscribeForm) {
         subscribeForm.addEventListener('submit', function(e) {
-            e.preventDefault();
             const emailInput = document.getElementById('email-input');
             const messageContainer = document.getElementById('subscribe-message');
             const email = emailInput.value;
